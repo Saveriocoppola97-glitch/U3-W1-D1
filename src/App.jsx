@@ -1,11 +1,18 @@
-import ButtonComponent from "./components";
+import MyClassComponent from "./components/MyClassComponent";
+import ButtonComponent from "./components/ButtonComponent";
 
-function App() {
+const Application = function App() {
   return (
-    <div>
-      <ButtonComponent text="Cliccami!" />
-    </div>
+    <>
+      <ButtonComponent testo="Ciao!" />
+      <ButtonComponent testo={100} />
+      <ButtonComponent testo2="Ciaooo!" />
+      <MyClassComponent
+        cat="https://placecats.com/300/200"
+        catAlt="Desc Gatto"
+      />
+    </>
   );
-}
+};
 
-export default App;
+export default Application;
