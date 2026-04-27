@@ -1,7 +1,8 @@
+// IMPORTIAMO I COMPONENTI CREATI INSERENDO IL PERCORSO DEL FILE
 import MyClassComponent from "./components/MyClassComponent";
 import ButtonComponent from "./components/ButtonComponent";
-
-const Application = function App() {
+// CREIAMO UNA FUNZIONE CHIAMATA Application CHE RITORNA I COMPONENTI CAMBIANDO IL TESTO
+const Application = function Application() {
   return (
     <>
       <ButtonComponent testo="Ciao!" />
@@ -14,5 +15,5 @@ const Application = function App() {
     </>
   );
 };
-
+//ESPORTIAMO
 export default Application;
